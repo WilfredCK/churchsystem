@@ -19,3 +19,9 @@
 
 ## Important limitations
 This is a front-end simulation using sample data in browser memory; reload resets changes. Login is not real authentication and charts/fonts use CDNs. Do not enter real member or financial data. Production deployment needs a secure backend, persistent database, access control, audit logs, backups and privacy/security review.
+
+
+## Latest enhancements
+- Stable hamburger sidebar toggle: hide/show on desktop and slide-in/out navigation on mobile.
+- Ministries section with ministry cards, leader tags, member contacts/gender/age, recurring weekly schedules, annual-plan timeline (Past/Pending/Future), and budget allocation/spend/remaining views.
+- Ministry information is illustrative demo data; replace it with verified church records before operational use.
