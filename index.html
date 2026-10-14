@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EcclesiaSync — Church Management</title><link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head>
+<body>
+<div id="loginScreen" class="login-screen"><div class="login-art"><div class="art-orb"></div><div class="art-copy"><span class="eyebrow">ONE COMMUNITY. ONE PURPOSE.</span><h1>Faith, connected.</h1><p>A thoughtful digital home for your church community.</p></div></div><form id="loginForm" class="login-card"><div class="brand-mark">✦</div><h2>EcclesiaSync</h2><p class="muted">Church Management System</p><label>Church / workspace<input id="churchCode" value="STJPH-001" required></label><label>Member code<input id="memberCode" value="ADMIN-001" required></label><label>Password<input id="password" type="password" value="demo123" required></label><button class="primary wide">Sign in to workspace <span>→</span></button><small>Demo mode · Any filled credentials work</small></form></div>
+<div id="app" class="app hidden"><aside id="sidebar" class="sidebar"><div class="brand"><div class="brand-mark">✦</div><div class="brand-name"><b>EcclesiaSync</b><small>CHURCH OS</small></div><button id="collapseBtn" class="icon-btn" title="Collapse sidebar">☰</button></div><div class="church-switch"><div class="church-avatar">SJ</div><div><b>St. Joseph Parish</b><small>Dar es Salaam, TZ</small></div><span>⌄</span></div><div class="nav-label">WORKSPACE</div><nav id="nav">
+<button data-page="dashboard" class="nav-item active"><span>◫</span> Analytics Dashboard</button>
+<button data-page="members" class="nav-item"><span>♙</span> Member Directory <i>248</i></button>
+<button data-page="onboarding" class="nav-item"><span>＋</span> Member Onboarding</button>
+<button data-page="jumuiya" class="nav-item"><span>⌂</span> Jumuiya Management</button>
+<button data-page="service" class="nav-item"><span>◷</span> Service Tracker</button>
+<div class="nav-label">FINANCE & RESOURCES</div>
+<button data-page="finance" class="nav-item"><span>▣</span> Church Finance</button>
+<button data-page="expenses" class="nav-item"><span>↗</span> Expense History</button>
+<button data-page="offerings" class="nav-item"><span>♡</span> Member Offerings</button>
+<button data-page="budget" class="nav-item"><span>▤</span> Financial Budget</button>
+<button data-page="funds" class="nav-item"><span>◈</span> Offering Funds</button>
+<button data-page="accounts" class="nav-item"><span>▦</span> Financial Accounts</button>
+<button data-page="inventory" class="nav-item"><span>▧</span> Church Inventory</button>
+<div class="nav-label">CHURCH CONTENT</div>
+<button data-page="documents" class="nav-item"><span>▤</span> Document Vault</button>
+<button data-page="profile" class="nav-item"><span>⚙</span> Church Profile</button></nav><div class="sidebar-bottom"><div class="help-box"><span>✧</span><div><b>Need a hand?</b><small>Visit the help center</small></div><span>↗</span></div><div class="user-mini"><div class="user-avatar">CW</div><div><b>Collin Wilfred</b><small>Administrator</small></div><button id="logoutBtn" class="icon-btn">↪</button></div></div></aside>
+<main class="main"><header class="topbar"><button id="mobileMenu" class="icon-btn mobile-only">☰</button><div class="crumb">Workspace <span>/</span> <b id="crumbPage">Analytics Dashboard</b></div><div class="top-actions"><button class="icon-btn" title="Search" id="searchBtn">⌕</button><div class="search-wrap hidden" id="searchWrap"><input id="globalSearch" placeholder="Search this page…"></div><button class="icon-btn notification" title="Notifications">♧<em></em></button><div class="top-user"><div class="user-avatar">CW</div><div><b>Collin Wilfred</b><small>Administrator</small></div><span>⌄</span></div></div></header><section id="content" class="content"></section><footer>© 2026 EcclesiaSync <span>Made for ministry, built for community <b>✦</b></span></footer></main></div>
+<div id="modalRoot"></div><div id="toastRoot" class="toast-root"></div><script src="data.js"></script><script src="app.js"></script></body></html>
